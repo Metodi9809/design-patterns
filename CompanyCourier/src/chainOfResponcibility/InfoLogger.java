@@ -1,0 +1,13 @@
+package chainOfResponcibility;
+
+public class InfoLogger extends Logger{
+	public InfoLogger() {
+		this.level = Logger.INFO;
+	}
+
+	@Override
+	protected void writeMessage(String message) {
+		System.out.println("Info message: " + message);
+	}
+
+}
